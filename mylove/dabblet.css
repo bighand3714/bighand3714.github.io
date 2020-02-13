@@ -1,0 +1,100 @@
+/**Happy Valentine's Day
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box 
+}
+
+body{
+background-color:#E03840;
+}
+
+.happy{
+margin-top: 80px;
+font-family: 'Cookie', cursive;
+font-size: 5em;
+text-align: center;
+color: #FFF;
+text-shadow: 2px 2px 2px #000;
+}
+
+.happy2{
+margin-top: 10px;
+font-family: 'Cookie', cursive;
+font-size: 2em;
+text-align: center;
+color: #FFF;
+text-shadow: 2px 2px 2px #000;
+}
+
+.wrapper {
+  position:relative;
+  width:385px;
+  margin: 10px auto;
+  
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color:#FFF;
+  border-radius: 100px;
+  -webkit-animation: grows 1s infinite ease;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  left: 185px;
+}
+
+.bottom {
+  position: relative;
+  top: -64px;
+  right: 6.02px;
+  width: 0px;
+  height: 0px;
+  border-radius: 100px;
+  border-left: 199px solid transparent;
+  border-right: 199px solid transparent;
+  border-top: 190px solid #fff;
+  -webkit-animation: grow 1s infinite ease;
+}
+
+.shadow {
+position:relative;
+left: 2px;
+top: 2px;
+}
+
+.circle-shadow {
+  position:absolute;
+  width: 200px;
+  height: 200px;
+  background-color:#000;
+  border-radius: 100px;
+  -webkit-animation: grows 1s infinite ease;
+
+}
+
+.bottom-shadow {
+  position: absolute;
+  top: 136px;
+  right: -6px;
+  width: 0px;
+  height: 0px;
+  border-radius: 100px;
+  border-left: 199px solid transparent;
+  border-right: 199px solid transparent;
+  border-top: 190px solid #000;
+  -webkit-animation: grow 1s infinite ease;
+  
+}
+@-webkit-keyframes grows {
+    from {-webkit-transform: scale(1);}
+    to   {-webkit-transform: scale(1.03);}
+}
+@-webkit-keyframes grow {
+    from {-webkit-transform: scale(1);}
+    to   {-webkit-transform: scale(1.03);}
+}
+
