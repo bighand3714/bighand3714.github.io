@@ -1,6 +1,6 @@
 # bighand3714.github.io
 
-个人作品集网站（React + Vite + TypeScript），通过 GitHub Actions 自动部署到 GitHub Pages。
+个人作品集网站（React + Vite + TypeScript），部署在 GitHub Pages。
 
 ## 🚀 本地开发
 
@@ -21,10 +21,21 @@ npm run preview    # 预览构建产物
 | `src/data/projects.ts` | 项目列表（空模板，含填写说明注释） |
 | `src/data/skills.ts` | 技能标签 |
 
-修改后 `git push` 到 main 分支，GitHub Actions 会自动构建并部署，约 1-2 分钟后网站更新。
+## 🌐 发布更新
 
-## 🌐 部署
+```bash
+./deploy.sh
+```
+
+脚本会自动：构建 → 推送源码到 `main` → 发布构建产物到 `gh-pages` 分支。
+部署完成后约 1 分钟生效。
+
+（GitHub Pages 已配置为从 `gh-pages` 分支根目录部署，无需任何额外设置）
+
+## 📁 目录结构
+
+- `main` 分支：网站源码
+- `gh-pages` 分支：构建产物（`dist/`），由 `deploy.sh` 自动发布
 
 - 仓库：https://github.com/bighand3714/bighand3714.github.io
 - 网站：https://bighand3714.github.io
-- 自动化：`.github/workflows/deploy.yml` 在每次 push 到 main 时构建并发布 Pages
