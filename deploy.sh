@@ -6,6 +6,13 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+# 检查是否有未提交的源码改动（deploy 前应先提交）
+if [ -n "$(git status --porcelain)" ]; then
+  echo "⚠️  检测到未提交的改动，请先提交再部署："
+  git status --short
+  exit 1
+fi
+
 echo "▶ 安装依赖..."
 npm ci --silent
 

@@ -27,11 +27,11 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // {
-  //   title: '示例项目',
-  //   description: '这里写你的项目简介，一两句话说明这个项目是什么、做了什么。',
-  //   tags: ['Godot', '像素风'],
-  //   github: 'https://github.com/bighand3714/your-repo',
-  //   demo: 'https://example.com',
-  // },
+  {
+    title: 'DoomLike',
+    description:
+      '用 Godot 4.6 制作的 DOOM 风格第一人称射击游戏：快节奏战斗、16 状态敌人 AI、局内卡牌成长，支持 PC / Android / Web 三平台导出。',
+    tags: ['Godot', 'GDScript', 'FPS', '动作游戏'],
+    github: 'https://github.com/bighand3714/DoomLike',
+  },
 ]
